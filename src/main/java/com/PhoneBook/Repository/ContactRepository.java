@@ -8,6 +8,8 @@ import com.PhoneBook.model.contact;
 @Repository
 public interface ContactRepository extends JpaRepository<contact,Integer> {
 
+	
+
  
 	
 	

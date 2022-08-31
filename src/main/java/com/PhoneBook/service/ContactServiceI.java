@@ -6,11 +6,18 @@ import com.PhoneBook.model.contact;
 
 public interface ContactServiceI {
 	
-	boolean SaveContact(contact Conatact); //SAveContact to userdefine Asto but 
-	                                  //Repository madhe just "save"	
-	//List<contact> getallContact();
+	//boolean SaveContact(contact Contact); //SAveContact to userdefine Asto but 
+	                                  //Repository madhe just "save"
+	boolean saveContact(contact Contact);
 	
-	//public void getContactById(Integer id);
+	List<contact> getallContact(); //hi UserDefine always
+	
+	contact getContactById(Integer contactId); //Get contact Aaplyla contact madhe millel
 
-	//public boolean update (contact Contact);
+	boolean updateContact(contact Contact);
+	
+	 boolean deleteByIdHard(Integer contactId);
+	 
+	 boolean deleteByIdSoft(Integer contactId);
+	
 }
